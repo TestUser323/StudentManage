@@ -9,13 +9,13 @@ public class SM {
     private int lengthschooling;
 
     public String getStudent() {
-        return "111111";
+        return student;
     }
 
     public void setStudent(String student) {
-        if (student == "0")
+        if (student.equals("0"))
             System.out.println("请重新输入");
-        else if (student == "小明"||student=="小红"||student=="小李")
+        else if (student.equals("小明")||student.equals("小红")||student.equals("小李"))
             getStudent();
             this.student = student;
     }
